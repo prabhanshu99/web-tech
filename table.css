@@ -1,0 +1,90 @@
+body{
+  font-family: Arial, sans-serif;
+  background:#f5f7fb;
+}
+.title{
+  text-align:center;
+  margin:20px;
+}
+
+table{
+    width:100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+table tr{
+    background-color: white;
+    
+}
+table th{
+    background-color: #B6D7A8;
+}
+.reme{
+    font-weight:bold;
+    font-size:18px;
+    color: gray;
+}
+
+.day{
+    font-weight:bold;
+}
+
+td, th{
+    border: 1px solid black;
+    padding:6px;
+}
+
+.mdm{
+    background-color: rgb(223, 223, 223);
+}
+
+.hindi{
+    background-color: yellow;
+}
+
+.oe{
+    background-color: #d9e1f2;
+}
+
+.dmgt{
+    background-color: #d9e1f2;
+}
+
+.ida{
+    background:#e6ccff;
+}
+
+.lab{
+    background-color: #9db4d6;
+}
+
+.wt{
+    background-color:aqua;
+}
+
+.espm{
+    background:#f8d7c2;
+}
+.recess{
+    color:red;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.os{
+    background:#9db9d8;
+}
+
+.ed{
+    background:#f2f2f2;
+}
+.label{
+    background:#bfbfbf;
+    font-weight:bold;
+}
+
+.sports{
+  font-size:30px;
+  font-weight:bold;
+  color:#c400c4;
+}
