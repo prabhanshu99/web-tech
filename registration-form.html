@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dark Theme Registration Form</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      font-family: Arial, sans-serif;
+      color: #fff;
+    }
+
+    .form-container {
+      background: #111;
+      padding: 30px 40px;
+      border-radius: 12px;
+      width: 350px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #00e5ff;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      outline: none;
+      background: #222;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      background: #2d2d2d;
+      border: 1px solid #00e5ff;
+    }
+
+    textarea {
+      resize: none;
+      height: 70px;
+    }
+
+    .btn-submit {
+      width: 100%;
+      padding: 12px;
+      background: #00e5ff;
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-submit:hover {
+      background: #00bcd4;
+      transform: scale(1.02);
+    }
+
+    .form-footer {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 13px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Registration Form</h2>
+
+    <form>
+
+      <!-- Name -->
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+      </div>
+
+      <!-- Password -->
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter password" required />
+      </div>
+
+      <!-- Mobile Number -->
+      <div class="form-group">
+        <label for="mobile">Mobile Number</label>
+        <input type="tel" id="mobile" placeholder="Enter mobile number" pattern="[0-9]{10}" required />
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email">Email ID</label>
+        <input type="email" id="email" placeholder="Enter email" required />
+      </div>
+
+      <!-- Address -->
+      <div class="form-group">
+        <label for="address">Address</label>
+        <textarea id="address" placeholder="Enter your address" required></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="btn-submit">Register</button>
+
+    </form>
+
+    <div class="form-footer">
+      © 2026 Dark Theme Form
+    </div>
+  </div>
+
+</body>
+</html>
