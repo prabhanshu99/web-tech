@@ -5,4 +5,3 @@ for(let i = 0; i < numbers.length; i++) {
        even.push(numbers[i]);
 }
 console.log(`Even numbers in an array are: ${even}`);
-

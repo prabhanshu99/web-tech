@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cookie Example</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    text-align: center;
+    padding: 40px;
+}
+
+.container{
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    width: 350px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+input{
+    padding: 8px;
+    width: 90%;
+    margin-top: 10px;
+}
+
+button{
+    padding: 8px 15px;
+    margin-top: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #0056b3;
+}
+
+#result{
+    margin-top: 15px;
+    font-weight: bold;
+}
+</style>
+
+<script>
+
+// Function to create cookie
+function setCookie(){
+    let username = document.getElementById("name").value;
+    document.cookie = "username=" + username + "; path=/";
+    document.getElementById("result").innerHTML = "Cookie stored successfully!";
+}
+
+// Function to retrieve cookie
+function getCookie(){
+    let cookieData = document.cookie;
+    document.getElementById("result").innerHTML = "Stored Cookie: " + cookieData;
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+<h2>Cookie Example</h2>
+
+<input type="text" id="name" placeholder="Enter your name">
+
+<br>
+
+<button onclick="setCookie()">Store Cookie</button>
+
+<button onclick="getCookie()">Retrieve Cookie</button>
+
+<p id="result"></p>
+
+</div>
+
+</body>
+</html>
